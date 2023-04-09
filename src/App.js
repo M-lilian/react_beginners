@@ -1,13 +1,15 @@
 
 import './App.css';
+import { Footer } from './components/Footer';
 
-const App = () => {
-return(
-  <div className='app'>  
-<h1>hello, react</h1>
-</div>
-);
-}
+import { Tasklist }  from "./components/Tasklist";
+export default function App() {
+  const info = "Random";
 
-export default App;
-  
+  return (
+    <div className="app">
+  <Tasklist  info={info  }/>
+  <Footer />
+    </div>
+  ); 
+    }
